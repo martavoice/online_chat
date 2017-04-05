@@ -7,6 +7,7 @@
     <groupId>online_chat</groupId>
     <artifactId>online_chat</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
