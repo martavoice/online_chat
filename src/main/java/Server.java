@@ -10,9 +10,9 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Server {
     private static Map<String, Connection> connectionMap = new ConcurrentHashMap<>();
     public static void main(String[] args) throws IOException {
-        int port = ConsoleHelper.readInt();
-        ServerSocket serverSocket = new ServerSocket(port);
-        System.out.println("сервер запущен");
+
+        ServerSocket serverSocket = new ServerSocket(8080);
+
         while (true) {
             try {
                 Socket socket = serverSocket.accept();
